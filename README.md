@@ -6,7 +6,8 @@ SpringBoot를 JPA를 사용하여 개발
 1. Rest API로 구현했습니다.
 - GET, POST,( PUT/PATCH, DELETE : 해당 프젝에서는 구현하지 않음 )
  
-2. JPA & LOMBOK
+
+2. LOMBOK & JPA
 
 -LOMBOK
  - @Data : Getter, Setter를 자동으로 생성
