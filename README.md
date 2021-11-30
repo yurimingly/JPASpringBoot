@@ -3,6 +3,8 @@
 SpringBoot를 JPA를 사용하여 개발
 
 
+
+
 1. Rest API로 구현했습니다.
 - GET, POST,( PUT/PATCH, DELETE : 해당 프젝에서는 구현하지 않음 )
  
@@ -18,7 +20,9 @@ SpringBoot를 JPA를 사용하여 개발
  - Object(자바객체)와 Relation(관계형 데이터베이스) 둘 간의 맵핑을 통해서 보다 손쉽게 적용할 수 있는 기술을 제공
  - 쿼리에 집중하기 보다는 객체에 집중함으로써 조금 더 프로그래밍 적으로 많이 활용될 수 있다.
  
-3.Entity
+ 
+
+3. Entity
 - Camel Case : 단어를 표기할 때 첫 문자는 소문자로 시작하며 띄어쓰기 대신 대문자로 단어를 구분 
                 Java의 변수를 선언할 때 camelCase로 선언한다.
                 ex)honeNumbe, createdAt, updateAt
