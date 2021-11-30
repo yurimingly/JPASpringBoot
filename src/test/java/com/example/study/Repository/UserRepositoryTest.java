@@ -36,13 +36,17 @@ public class UserRepositoryTest extends StudyApplicationTests {
     }
 
     @Test
+    @Transactional
     public void read(){ //@RequestParam Long id
+
         //user table의 user을 모두 가져오겠다.
-        Optional<User> user = userRepository.findById(2L); //2번째 low
+//        Optional<User> user = userRepository.findById(1L); //2번째 low
+        Optional<User> user = userRepository.findByAccount("TestUser03");
 
         user.ifPresent(selectUser ->{
-            System.out.println("user : " +selectUser);
-            System.out.println("email : " +selectUser.getEmail());
+            selectUser.getOrderDetailList().stream().forEach(detail ->{
+                System.out.println(detail.getItem()); //.getItemId()를 쓰지 않는다. 왜냐 이제 mapped = "item"을 해놓았기에 getItem()만으로 객체를 바로 끌고온다.
+            });
         });
 
     }
