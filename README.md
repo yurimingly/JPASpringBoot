@@ -27,4 +27,17 @@ JPA(Java Persistent API)
                 DB 컬럼에 사용
                 ex)phone_number, created_at, updated_at
                                
-API를 정의하기에 따라 다르지만주로 api 통신 규격 구간에서는 Snake Case를 많이 사용한다.
+API를 정의하기에 따라 다르지만 주로 api 통신 규격 구간에서는 Snake Case를 많이 사용한다.
+
+JPA의 entity 및 column은 자동으로 camel case -> DB의 snake_case에 매칭 시켜준다.
+
+4. JPA 연관관계 설정
+ - 일대일 : @OneToOne
+ - 일대다 : @OneToMany
+ - 다대일 : @ManyToOne
+ - 다대다 : @ManyToMany
+
+
+5. JPA QueryMethod
+ 
+
